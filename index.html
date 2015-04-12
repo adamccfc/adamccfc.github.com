@@ -1,7 +1,21 @@
 ---
 layout: default
-title: Adam Morgan, Web Developer based in South Wales
-home: true
 ---
 
-{% include posts.html %}
+<div class="home">
+
+  <h1 class="page-heading">Articles</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
