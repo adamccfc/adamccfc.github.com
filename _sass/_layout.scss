@@ -92,8 +92,8 @@
  * Site footer
  */
 .site-footer {
+    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    background: aliceblue;
 }
 
 .footer-heading {
@@ -156,20 +156,6 @@
     }
 }
 
-//- Copyright Section
-
-.copyright {
-    max-width: 100%;
-    height: 100%;
-    background: green;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 10px 0;
-    p {
-        margin: 0;
-    }
-}
 
 
 /**
