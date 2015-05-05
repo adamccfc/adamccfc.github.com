@@ -10,3 +10,5 @@ Running grunt on the commandline will now perform the following tasks:
 - Copy the bootstrap glyph icons to assets/img.
 - A exec:build and exec:serve task that can be used for generating the website and hosting it locally.
 - A exec:deploy task that copies your website to a remote server using rsync over ssh.
+
+To build the site and run the serve locally, run the following command in the command line ```grunt exec```
