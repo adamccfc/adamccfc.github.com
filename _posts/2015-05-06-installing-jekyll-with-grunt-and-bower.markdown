@@ -57,6 +57,7 @@ The first thing you will need to do, that Patrick's post does not cover is insta
 **Gruntfile.js**
 
     module.exports = function(grunt) {
+      
     grunt.initConfig({
       less: {
         production: {
@@ -103,10 +104,13 @@ The first thing you will need to do, that Patrick's post does not cover is insta
         }
       }
     });
+
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-exec');
+
     grunt.registerTask('default', [ 'less', 'uglify', 'copy', 'exec:build' ]);
     grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
+
     };
