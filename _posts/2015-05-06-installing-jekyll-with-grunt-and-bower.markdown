@@ -11,3 +11,20 @@ Now, I was wondering the best way to go about this, and after a quick search, I 
 # Installing Jekyll
 
 The first thing you will need to do, that Patrick's post does not cover is installing a Jekyll instance. I won't go into much detail on this, but you can follow the Jekyll tutorial [here](http://jekyllrb.com/docs/installation/) on how to get everything set up and installed correctly. 
+
+# Installing Bower
+
+```javascript
+{
+  "name": "mywebsite",
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "jquery": "~2.0.3"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
+```
