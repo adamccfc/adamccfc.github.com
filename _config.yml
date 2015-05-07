@@ -12,3 +12,10 @@ github_username:  adamccfc
 
 # Build settings
 markdown: kramdown
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+# Google Tag Manager
+google_tag_manager_id: GTM-NB9NCK  
