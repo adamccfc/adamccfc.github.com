@@ -4,8 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I went to university in 2008 to study web design at the University of Western England, where I gained a 2:1 degree. Ever since going to University I have been developing websites. 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I like to build responsive websites that gives the user the best possible experience no matter what device they are viewing the website on. 
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+If you would like to get in touch about me developing a website for you, then please contact me.
+
+# During My Free Time
+
+On the rare occasion I get a spare hour, I like to spend my time on my Xbox One. I mainly play Fifa, so if you'd like a game, add my gamertag - Adam CCFC. There's nothing I find more relaxing than cooking a meal. I take pleasure in cooking for other people and watching them enjoy the meal that I have made. I'm an avid Cardiff City supporter. I've been going to watch them play since I was 13, and I've been a season ticket holder for the past 7 years.
