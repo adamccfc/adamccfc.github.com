@@ -12,7 +12,7 @@ layout: default
         </h1>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br>
         {{ post.content | strip_html | truncatewords:75}}<br>
-        <a class="button" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+        <!-- <a class="button" href="{{ post.url | prepend: site.baseurl }}">Button</a> -->
       </li>
     {% endfor %}
   </ul>
