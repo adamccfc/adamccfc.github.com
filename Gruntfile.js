@@ -30,7 +30,8 @@ grunt.initConfig({
   copy: {
     bootstrap: {
       files: [
-        {expand: true, cwd: 'bower_components/bootstrap/img/', src: ['**'], dest: 'assets/img/'}
+        {expand: true, cwd: 'bower_components/bootstrap/img/', src: ['**'], dest: 'assets/img/'},
+        {expand: true, cwd: 'bower_components/bootstrap-grid-only/css/', src: ['**'], dest: 'css/'}
       ]
     }
   },
