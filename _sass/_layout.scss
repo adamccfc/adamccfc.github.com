@@ -2,10 +2,8 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    background: $brand-color;
     min-height: 56px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -19,7 +17,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: #FFFFFF;
     }
 }
 
@@ -32,7 +30,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: #FFF;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -92,8 +90,15 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    background: $brand-color;
+    color: #5D7184;
     padding: $spacing-unit 0;
+    h1,h2,h3,h4,h5,h6,p,ul,li,a {
+        color: #FFFFFF;
+    }
+    p,ul,li,a {
+        color: #7D9AB3;
+    }
 }
 
 .footer-heading {
@@ -156,6 +161,14 @@
     }
 }
 
+//- Sub Footer
+.sub-footer {
+    padding-top: 15px;
+    background: #D64D4F;
+    color: #992426;
+    text-align: center;
+    font-size: 10px;
+}
 
 
 /**
@@ -169,12 +182,28 @@
     font-size: 20px;
 }
 
+.post {
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #E7E7E7;
+}
+
 .post-list {
     margin-left: 0;
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: 20px;
+        background: #ffffff;
+        padding: 20px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        border: 1px solid #E7E7E7;
     }
 }
 
@@ -232,5 +261,24 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+/**
+ * Buttons
+ */
+
+.button {
+    background: #2EB2EF;
+    padding: 10px 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    a {
+        color: #FFFFFF;
+    }
+    a:visited {
+        color: #FFFFFF;
     }
 }
