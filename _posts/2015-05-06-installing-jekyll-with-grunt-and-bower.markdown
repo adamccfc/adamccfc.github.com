@@ -14,6 +14,10 @@ The first thing you will need to do, that Patrick's post does not cover is insta
 
 # Installing Bower
 
+To install bower, go to your terminal and type in the following command ```npm install -g bower```. This will install bower globally on your machine. 
+
+You must then create a bower.json file, which will include the name of your project, and the dependancies it uses. Below is an example of a bower.json file with the dependancies of bootstrap and jquery. As you can see the numbers after them is the version of the dependancies.
+
 **bower.json**
 
 {% highlight javascript %}
@@ -30,6 +34,8 @@ The first thing you will need to do, that Patrick's post does not cover is insta
   ]
 }
 {% endhighlight %}
+
+Save this file in your projects root directory. Then in your terminal go to your projects directory and run the following command ```bower install```. This will install all of the dependancies that you have defined in your bower.json file.
 
 **package.json**
 
