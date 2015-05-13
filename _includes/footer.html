@@ -7,9 +7,13 @@
       <div class="col-md-3">
         <h3>Links</h3>
         <ul>
-          <li>Freelance Work</li>
-          <li>Posts</li>
-          <li>About</li>
+          <!-- <li>Freelance Work</li> -->
+          <li><a class="page-link" href="/">Posts</a></li>
+          {% for page in site.pages %}
+            {% if page.title %}
+            <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
 
@@ -33,7 +37,6 @@
                 </svg>
               </span>
 
-              <span class="username">{{ site.github_username }}</span>
             </a>
           </li>
           {% endif %}
@@ -48,22 +51,22 @@
                 </svg>
               </span>
 
-              <span class="username">{{ site.twitter_username }}</span>
             </a>
           </li>
           {% endif %}
         </ul>
-        
+
       </div>
 
-    </div>
-
-
-    <div class="row">
-      <div class="col-md-12">
-        <p>&copy; Copyright Adam Morgan 2015</p>
-      </div>
     </div>
   
+  </div>
+</footer>
+
+<footer id="sub-footer">
+  <div class="row">
+    <div class="col-md-12">
+      <p>&copy; Copyright Adam Morgan 2015</p>
+    </div>
   </div>
 </footer>

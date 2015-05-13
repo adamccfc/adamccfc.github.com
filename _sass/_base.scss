@@ -197,12 +197,17 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 24px;
+        height: 24px;
         vertical-align: middle;
+        margin-right: 5px;
+        outline: none;
 
         path {
-            fill: $grey-color;
+            fill: #FFFFFF;
+        }
+        path:hover {
+            fill: #7D9AB3;
         }
     }
 }

@@ -111,8 +111,29 @@
     h1,h2,h3,h4,h5,h6,p,ul,li,a {
         color: #FFFFFF;
     }
-    p,ul,li,a {
+    p {
         color: #7D9AB3;
+        font-size: 12px;
+    }
+    a {
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    ul {
+        margin: 0;
+        font-size: 12px;
+    }
+    li {
+        list-style: none;
+        font-size: 12px;
+    }
+    ul.social-media-list {
+        li {
+            display: inline-block;
+        }
     }
 }
 
@@ -177,12 +198,15 @@
 }
 
 //- Sub Footer
-.sub-footer {
-    padding-top: 15px;
-    background: #D64D4F;
-    color: #992426;
+#sub-footer {
+    padding-top: 10px;
+    background: #3E485C;
+    color: #656D7E;
     text-align: center;
     font-size: 10px;
+    p {
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -297,3 +321,11 @@
         color: #FFFFFF;
     }
 }
+
+/**
+ * Modifiers
+ */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right }
