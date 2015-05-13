@@ -1,4 +1,17 @@
 /**
+ * Logo
+ */
+
+.logo {
+    position: relative;
+
+    img {
+        height: 32px;
+        margin: 10px
+    }
+}
+
+/**
  * Site header
  */
 .site-header {
