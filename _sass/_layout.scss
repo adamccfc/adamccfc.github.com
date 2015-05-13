@@ -5,7 +5,8 @@
     background: $brand-color;
     min-height: 56px;
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
+    width: 100%;
 }
 
 .site-title {
@@ -52,7 +53,7 @@
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
+            height: 33px;
             line-height: 0;
             padding-top: 10px;
             text-align: center;
@@ -80,6 +81,7 @@
         .page-link {
             display: block;
             padding: 5px 10px;
+            color: $brand-color;
         }
     }
 }
@@ -175,7 +177,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 76px 0 30px 0;
 }
 
 .page-heading {
