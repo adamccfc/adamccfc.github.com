@@ -176,6 +176,13 @@ pre {
 }
 
 
+a.site-title.name {
+    @media (max-width: 400px) {
+        display: none;
+    }
+}
+
+
 /**
  * Clearfix
  */
