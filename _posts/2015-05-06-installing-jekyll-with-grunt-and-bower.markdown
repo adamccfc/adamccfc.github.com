@@ -68,6 +68,8 @@ Save this file in your projects root directory. Then in your terminal go to your
 
 # Installing Grunt
 
+To install Grunt globally on your maching use the following command in your terminal ```npm install -g grunt-cli```. You will then need to create a Gruntfile.js file in your root directory, like the example below.
+
 **Gruntfile.js**
 
 {% highlight javascript %}
@@ -130,3 +132,5 @@ grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
 
 };
 {% endhighlight %}
+
+To run Jekyll locally, you can run the following command in your projects root directory ```grunt exec```. This will serve jekyll locally on your server. If you go to the following URL ```http://localhost:4000``` you should then be able to see a working version of your website on your local machine.
