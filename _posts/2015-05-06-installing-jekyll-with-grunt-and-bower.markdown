@@ -14,7 +14,7 @@ The first thing you will need to do, that Patrick's post does not cover is insta
 
 # Installing NPM
 
-We first need to install NPM which stands for Node Package Manager. You can do this by first installing Homebrew with the follwoing command ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```. Then use the command ```homebrew install npm``` to install NPM. Now in your projects directory you will need to create a package.json file. Below is an example of what it should look like. 
+We first need to install NPM which stands for Node Package Manager. You can do this by first installing Homebrew with the follwoing command `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`. Then use the command `homebrew install npm` to install NPM. Now in your projects directory you will need to create a package.json file. Below is an example of what it should look like. 
 
 **package.json**
 
@@ -43,7 +43,7 @@ We first need to install NPM which stands for Node Package Manager. You can do t
 
 # Installing Bower
 
-To install bower, go to your terminal and type in the following command ```npm install -g bower```. This will install bower globally on your machine. 
+To install bower, go to your terminal and type in the following command `npm install -g bower`. This will install bower globally on your machine. 
 
 You must then create a bower.json file, which will include the name of your project, and the dependancies it uses. Below is an example of a bower.json file with the dependancies of bootstrap and jquery. As you can see the numbers after them is the version of the dependancies.
 
@@ -64,11 +64,11 @@ You must then create a bower.json file, which will include the name of your proj
 }
 {% endhighlight %}
 
-Save this file in your projects root directory. Then in your terminal go to your projects directory and run the following command ```bower install```. This will install all of the dependancies that you have defined in your bower.json file.
+Save this file in your projects root directory. Then in your terminal go to your projects directory and run the following command `bower install`. This will install all of the dependancies that you have defined in your bower.json file.
 
 # Installing Grunt
 
-To install Grunt globally on your maching use the following command in your terminal ```npm install -g grunt-cli```. You will then need to create a Gruntfile.js file in your root directory, like the example below.
+To install Grunt globally on your maching use the following command in your terminal `npm install -g grunt-cli`. You will then need to create a Gruntfile.js file in your root directory, like the example below.
 
 **Gruntfile.js**
 
@@ -133,4 +133,4 @@ grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
 };
 {% endhighlight %}
 
-To run Jekyll locally, you can run the following command in your projects root directory ```grunt exec```. This will serve jekyll locally on your server. If you go to the following URL ```http://localhost:4000``` you should then be able to see a working version of your website on your local machine.
+To run Jekyll locally, you can run the following command in your projects root directory `grunt exec`. This will serve jekyll locally on your server. If you go to the following URL `http://localhost:4000` you should then be able to see a working version of your website on your local machine.
