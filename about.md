@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Hey, I'm Adam. I have a passion for the web.
 
-I went to university in 2008 to study web design at the University of Western England, where I gained a 2:1 degree. Ever since going to University I have been developing websites, mainly during the working day. I am currently working as a front end web developer for [Eysys](www.eysys.com).
+I went to university in 2008 to study web design at the University of Western England, where I gained a 2:1 degree. Ever since going to University I have been developing websites, mainly during the working day. I am currently working as a front end web developer for [Eysys](http://www.eysys.com).
 
 I like to build responsive websites that gives the user the best possible experience no matter what device they are viewing the website on. 
 
