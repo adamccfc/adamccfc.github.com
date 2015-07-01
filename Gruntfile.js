@@ -1,59 +1,49 @@
 module.exports = function(grunt) {
 
-grunt.initConfig({
-  less: {
-    production: {
-      options: {
-        paths: ["bower_components/bootstrap/less"],
-        yuicompress: true
+  grunt.initConfig({
+    // This cleans up the jQuery file and adds it into the assets folder
+    uglify: {
+      jquery: {
+        files: {
+          'assets/js/jquery.min.js': 'bower_components/jquery/jquery.js'
+        }
       },
-      files: {
-        "assets/css/application.min.css": "assets/_less/application.less"
+    // This copies the bootstrap minified css into the assets folder
+    copy: {
+      bootstrap: {
+        files: [{
+          expand: true,
+          cwd: 'bower_components/bootstrap/dist/css',
+          src: ['bootstrap.min.css'],
+          dest: 'assets/css'
+        }
+    },
+    exec: {
+      build: {
+        cmd: 'jekyll build'
+      },
+      serve: {
+        cmd: 'jekyll serve --watch'
+      },
+      deploy: {
+        cmd: 'rsync --progress -a --delete -e "ssh -q" _site/ myuser@host:mydir/'
       }
     }
-  },
-  uglify: {
-    jquery: {
-      files: {
-        'assets/js/jquery.min.js': 'bower_components/jquery/jquery.js'
-      }
-    },
-    bootstrap: {
-      files: {
-        'assets/js/bootstrap.min.js': ['bower_components/bootstrap/js/bootstrap-collapse.js',
-                                       'bower_components/bootstrap/js/bootstrap-scrollspy.js',
-                                       'bower_components/bootstrap/js/bootstrap-button.js',
-                                       'bower_components/bootstrap/js/bootstrap-affix.js']
-      }
-    }
-  },
-  copy: {
-    bootstrap: {
-      files: [
-        {expand: true, cwd: 'bower_components/bootstrap/img/', src: ['**'], dest: 'assets/img/'},
-        {expand: true, cwd: 'bower_components/bootstrap-grid-only/css/', src: ['**'], dest: 'css/'}
-      ]
-    }
-  },
-  exec: {
-    build: {
-      cmd: 'jekyll build'
-    },
-    serve: {
-      cmd: 'jekyll serve --watch'
-    },
-    deploy: {
-      cmd: 'rsync --progress -a --delete -e "ssh -q" _site/ myuser@host:mydir/'
-    }
-  }
-});
+  });
 
-grunt.loadNpmTasks('grunt-contrib-uglify');
-grunt.loadNpmTasks('grunt-contrib-less');
-grunt.loadNpmTasks('grunt-contrib-copy');
-grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-exec');
 
-grunt.registerTask('default', [ 'less', 'uglify', 'copy', 'exec:build' ]);
-grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
+  grunt.registerTask('default', ['less', 'uglify', 'copy', 'exec:build']);
+  grunt.registerTask('deploy', ['default', 'exec:deploy']);
+
+  // For server
+  grunt.registerTask('watch', [
+    'uglify',
+    'copy',
+    'exec:serve',
+  ]);
 
 };

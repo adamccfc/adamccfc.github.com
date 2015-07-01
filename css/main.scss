@@ -3,19 +3,20 @@
 ---
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400,700|Roboto+Slab:400,700);
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 
 // Our variables
 $base-font-family: 'Roboto', Arial, Helvetica, sans-serif;
-$base-title-family: 'Roboto Slab', serif;
+$base-title-family: 'Fjalla One', sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #49556B;
-$background-color: #E3ECFC;
-$brand-color:      #47536A;
+$text-color:       #3A9AD9;
+$background-color: #FFFFFF;
+$brand-color:      #354458;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
