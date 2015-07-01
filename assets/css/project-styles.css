@@ -1,0 +1,12 @@
+/**
+ * base.less
+ * The base file for imports and site wide setup styles
+ *
+ * Author : Adam Morgan - @adamtaffymorgan
+ *
+**/
+/* Includes less hat from bower
+ * ! You wont see the elements in your css file they're only called as used!
+ * A list of useful mixins which you can use to automatically
+ * prefix transforms, for example, .transform(color 2s linear);
+**/
