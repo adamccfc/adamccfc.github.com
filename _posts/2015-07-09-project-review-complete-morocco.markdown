@@ -26,7 +26,7 @@ Below is a list of the technologies that have been used to create this website:
 
 Below is a preview of the homepage of the Complete Morocco website.
 
-![Complete Morocco Website Preview](http://postimg.org/image/m7pp7wb2z/)
+![Complete Morocco Website Preview](http://s17.postimg.org/pek8rivj1/complete_morocco_preview.png)
 
 ## Conclusion
 
