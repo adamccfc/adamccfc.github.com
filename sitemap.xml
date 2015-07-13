@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>http://www.adammorgan.wales/</loc>
+  <lastmod>2015-07-09T10:32:46+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/about/</loc>
+  <lastmod>2015-07-09T10:32:46+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/work/2015/07/09/project-review-complete-morocco.html</loc>
+  <lastmod>2015-07-09T10:32:46+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/jekyll/blog/benefits/wordpress/2015/05/26/benefits-of-jekyll-compared-to-wordpress.html</loc>
+  <lastmod>2015-07-09T10:32:46+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/jekyll/bower/grunt/installation/2015/05/06/installing-jekyll-with-grunt-and-bower.html</loc>
+  <lastmod>2015-07-09T10:32:46+00:00</lastmod>
+</url>
+</urlset>
