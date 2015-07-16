@@ -1,11 +1,33 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    // This concatenates the JS and CSS libs into a libs directory
+    concat: {
+      options: {
+        banner: '<%= banner %>',
+        stripBanners: true
+      },
+      jsLibs: {
+        src:
+          [
+            // Add js libs here
+          ],
+        dest: 'dist/assets/js/project-libs.js'
+      },
+      cssLibs: {
+        src: 
+          [
+            // Add css libs here
+            'bower_components/bootstrap/dist/css/bootstrap.min.css'
+          ],
+        dest: 'assets/css/project-libs.css'
+      }
+    },
     // Compiles the less files into one main css file
     less: {
       dev: {
         files: {
-          "assets/css/project-styles.css" : "styles/base.less"
+          "assets/css/project-styles.css" : "less/base.less"
         }
       }
     },
@@ -15,17 +37,6 @@ module.exports = function(grunt) {
         files: {
           'assets/js/jquery.min.js': 'bower_components/jquery/jquery.js'
         }
-      }
-    },
-    // This copies the bootstrap minified css into the assets folder
-    copy: {
-      bootstrap: {
-        files: [{
-          expand: true,
-          cwd: 'bower_components/bootstrap/dist/css',
-          src: ['bootstrap.min.css'],
-          dest: 'assets/css'
-        }]
       }
     },
     exec: {
@@ -41,20 +52,21 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('default', ['less', 'uglify', 'copy', 'exec:build']);
   grunt.registerTask('deploy', ['default', 'exec:deploy']);
 
   // For Development
-  grunt.registerTask('watch', [
+  grunt.registerTask('dev', [
+    'concat',
     'less',
     'uglify',
-    'copy',
-    'exec:serve',
+    'exec:serve'
   ]);
 
 };

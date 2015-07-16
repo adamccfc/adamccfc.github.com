@@ -15,6 +15,10 @@
     "grunt-exec": "*"
   },
   "engines": {
-      "npm": "1.2.x"
+    "npm": "1.2.x"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }
