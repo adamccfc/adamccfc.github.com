@@ -17,4 +17,4 @@ I then thought it would be cool to try and replicate one of my favourite Cardiff
 <p data-height="434" data-theme-id="0" data-slug-hash="PqxBQK" data-default-tab="result" data-user="AdamCCFC" class='codepen'>See the Pen <a href='http://codepen.io/AdamCCFC/pen/PqxBQK/'>8 Bit Cardiff City's Peter Whittingham</a> by Adam Morgan (<a href='http://codepen.io/AdamCCFC'>@AdamCCFC</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Try using the method for yourself, it's really easy and fun to do! If you come up with any cool 8 bit art, I'd love to see them. Tweet me @adamtaffymorgan!
+Try using the method for yourself, it's really easy and fun to do! If you come up with any cool 8 bit art, I'd love to see them. Tweet me [@adamtaffymorgan](https://twitter.com/adamtaffymorgan)!
