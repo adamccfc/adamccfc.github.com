@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "8 Bit CSS Art"
+date:   2015-08-03 20:47:00
+categories: css
+---
+
+I was randomly trawling codepen a few nights ago, and came across [this cool method](http://codepen.io/nucliweb/pen/RPqrQY) for creating 8 bit art using SCSS and one html div tag. 
+
+I decided to use this method to create the classic 8 bit Mario and Luigi designs.
+
+<p data-height="285" data-theme-id="0" data-slug-hash="NqEYEB" data-default-tab="result" data-user="AdamCCFC" class='codepen'>See the Pen <a href='http://codepen.io/AdamCCFC/pen/NqEYEB/'>8 Bit Mario & Luigi</a> by Adam Morgan (<a href='http://codepen.io/AdamCCFC'>@AdamCCFC</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+I then thought it would be cool to try and replicate one of my favourite Cardiff City players, Peter Whittingham. This was a bit more tricky as there were more colours, and a more complex design, which was based on [this design](http://8bit-football.com/2012/12/12/cardiff-city-woking-fc-and-dc-united/) by 8bit-football.com. You can see the outcome below.
+
+<p data-height="434" data-theme-id="0" data-slug-hash="PqxBQK" data-default-tab="result" data-user="AdamCCFC" class='codepen'>See the Pen <a href='http://codepen.io/AdamCCFC/pen/PqxBQK/'>8 Bit Cardiff City's Peter Whittingham</a> by Adam Morgan (<a href='http://codepen.io/AdamCCFC'>@AdamCCFC</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+Try using the method for yourself, it's really easy and fun to do! If you come up with any cool 8 bit art, I'd love to see them. Tweet me @adamtaffymorgan!
