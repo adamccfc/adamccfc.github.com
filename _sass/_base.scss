@@ -77,8 +77,13 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
     font-family: $base-title-family;
+    color: $title-color;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: normal;
+    text-align: left;
 }
 
 
@@ -87,15 +92,14 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $link-color;
     text-decoration: none;
 
     &:visited {
-        color: $brand-color;
+        color: $link-color;
     }
 
     &:hover {
-        color: $text-color;
         text-decoration: underline;
     }
 }
