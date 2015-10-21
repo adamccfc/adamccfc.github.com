@@ -23,9 +23,9 @@ First off, start by creating a list.
   </ul>
 {% endhighlight %}
 
-Each `<li>` tag will contian the title and content of the accordion.
+Each `<li>` tag will contain the title and content of the accordion.
 
-Next you want to create the structure for each accordion. Inside the `<li>` tags you need to add an `<input>`, `<label>` and `<article>` tag.
+Next you want to create the structure for each accordion. Inside the `<li>` tags you need to add an `<input>` `<label>` and `<article>` tag.
 
 {% highlight html %}
   <ul class="accordion">
