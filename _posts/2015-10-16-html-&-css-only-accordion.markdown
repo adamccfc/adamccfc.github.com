@@ -81,14 +81,14 @@ Here is the following code I have used to style the labels:
 
 {% highlight css %}
   ul.accordion li label {
-    padding: 20 px;
+    padding: 20px;
     color: #f3f3f3;
-    font-size: 20 px;
+    font-size: 20px;
     font-weight: 600;
-    width: 100 % ;
+    width: 100%;
     background-color: #3b5369;
     display: block;
-    border-bottom: 1px solid # 32485 d;
+    border-bottom: 1px solid #32485d;
     cursor: pointer;
   }
 
@@ -96,8 +96,8 @@ Here is the following code I have used to style the labels:
     content: '\f054';
     font-family: FontAwesome;
     position: absolute;
-    right: -15 px;
-    transition: transform 0.5 s;
+    right: -15px;
+    transition: transform 0.5s;
   }
 {% endhighlight %}
 *Note - I am using a font awesome icon to reinforce to the user that they can click on the element*
@@ -107,9 +107,9 @@ We now want to style the `<article>` tag. This is where the content within the a
 {% highlight css %}
   ul.accordion article {
     display: none;
-    padding: 20 px;
-    width: 100 % ;
-    height: 0 px;
+    padding: 20px;
+    width: 100%;
+    height: 0px;
     background-color: #f3f3f3;
     color: #32485d;
     -webkit-transition: all 0.3s ease-in-out;
@@ -136,7 +136,7 @@ Your accordion should now be starting to look nice. However there will be inputs
 Now they have been hidden you will want to add the functionality to the accordion. You can do this with the following code:
 
 {% highlight css %}
-  ul.accordion input[type= checkbox]: checked ~ article {
+  ul.accordion input[type=checkbox]:checked ~ article {
     display: block;
   }
 
@@ -160,30 +160,30 @@ ul.accordion {
 }
 
 ul.accordion li label {
-  padding: 20 px;
+  padding: 20px;
   color: #f3f3f3;
-  font-size: 20 px;
+  font-size: 20px;
   font-weight: 600;
-  width: 100 % ;
+  width: 100%;
   background-color: #3b5369;
   display: block;
-  border-bottom: 1px solid # 32485 d;
+  border-bottom: 1px solid #32485d;
   cursor: pointer;
 }
 
-ul.accordion li label: after {
+ul.accordion li label:after {
   content: '\f054';
   font-family: FontAwesome;
   position: absolute;
-  right: -15 px;
-  transition: transform 0.5 s;
+  right: -15px;
+  transition: transform 0.5s;
 }
 
 ul.accordion article {
   display: none;
-  padding: 20 px;
-  width: 100 % ;
-  height: 0 px;
+  padding: 20px;
+  width: 100%;
+  height: 0px;
   background-color: #f3f3f3;
   color: #32485d;
   -webkit-transition: all 0.3s ease-in-out;
@@ -202,16 +202,17 @@ ul.accordion input {
   display: none;
 }
 
-ul.accordion input[type= checkbox]: checked~article {
+ul.accordion input[type= checkbox]: checked ~ article {
   display: block;
-  height: 100 %; -webkit-transition: all 0.5 s ease-in-out; 
-  -moz-transition: all 0.5 s ease-in-out; 
-  -o-transition: all 0.5 s ease-in-out;
-  - ms-transition: all 0.5 s ease-in-out;
-  transition: all 0.5 s ease-in -out;
+  height: 100%; 
+  -webkit-transition: all 0.5s ease-in-out; 
+  -moz-transition: all 0.5s ease-in-out; 
+  -o-transition: all 0.5s ease-in-out;
+  - ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-ul.accordion input[type = checkbox]: checked~label: after {
+ul.accordion input[type = checkbox]: checked ~ label:after {
   transform: rotate(90 deg);
   -webkit-transform: rotate(90 deg);
   -ms-transform: rotate(90 deg);
