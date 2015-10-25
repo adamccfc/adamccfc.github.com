@@ -2,7 +2,7 @@
 layout: post
 title:  "CSS & HTML Only Accordion"
 date:   2015-10-16 15:09:00
-categories: tutorials, css, html, accordion
+categories: tutorials css html accordion
 ---
 
 **Using only CSS and HTML you can build a beautifully sleek accordion for your website.**
