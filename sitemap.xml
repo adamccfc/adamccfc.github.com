@@ -1,20 +1,48 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>http://www.adammorgan.wales{{ post.url | remove: 'index.html' }}</loc>
-    </url>
-    {% endfor %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
-    <url>
-        <loc>http://www.adammorgan.wales{{ page.url | remove: 'index.html' }}</loc>
-    </url>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
+<url>
+  <loc>http://www.adammorgan.wales/</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/about/</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/football/2015/10/25/5-5-things-i-hate-about-modern-football.html</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/tutorials/css/html/accordion/2015/10/16/html-&amp;-css-only-accordion.html</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/football/wales/2015/09/11/wales-away-cyprus-trip.html</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/css/2015/08/03/8-bit-art.html</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/work/2015/07/09/project-review-complete-morocco.html</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/jekyll/blog/benefits/wordpress/2015/05/26/benefits-of-jekyll-compared-to-wordpress.html</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/jekyll/bower/grunt/installation/2015/05/06/installing-jekyll-with-grunt-and-bower.html</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.adammorgan.wales/contact/</loc>
+  <lastmod>2015-10-28T19:11:25+00:00</lastmod>
+</url>
 </urlset>
