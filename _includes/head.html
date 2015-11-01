@@ -8,9 +8,10 @@
 
   <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="stylesheet" type="text/css" href="/css/grid12.css">
-  <link rel="stylesheet" type="text/css" href="/css/animated.css">
+  
+  <!-- This is the styles from all of the library files -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/project-libs.css">
+  <link rel="stylesheet" href="{{ "/assets/css/project-app.css" | prepend: site.baseurl }}">
 </head>
