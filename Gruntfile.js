@@ -20,20 +20,30 @@ module.exports = function(grunt) {
             src: 
               [
                 // Add css libs here
-                'libs/bootstrap/dist/css/bootstrap.css'
+                'libs/foundation-sites/dist/foundation.css',
+                'libs/components-font-awesome/css/font-awesome.min.css'
               ],
             dest: 'assets/css/project-libs.css'
           }
         },
-
+        copy: {
+          main: {
+            files: [{
+              expand: true,
+              cwd: 'libs/components-font-awesome/fonts',
+              src: ['**'],
+              dest: 'assets/fonts/'
+            }]
+          },
+        },
         compass: {
-            dist: {
-              options: {
-                sassDir: '_sass',
-                cssDir: 'assets/css',
-                environment: 'production'
-              }
+          dist: {
+            options: {
+              sassDir: '_sass',
+              cssDir: 'assets/css',
+              environment: 'production'
             }
+          }
         },
 
         jekyll: {
@@ -78,13 +88,13 @@ module.exports = function(grunt) {
 
         concurrent: {
             prod : {
-              tasks: ['watch', 'jekyll:prod'],
+              tasks: ['concat', 'watch', 'jekyll:prod'],
               options: {
                 logConcurrentOutput: true
               }
             },
             dev : {
-              tasks: ['concat', 'watch', 'jekyll:dev'],
+              tasks: ['concat', 'copy', 'watch', 'jekyll:dev'],
               options: {
                 logConcurrentOutput: true
               }
@@ -95,6 +105,7 @@ module.exports = function(grunt) {
 
     // 3. Where we tell Grunt we plan to use this plug-in.
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     // grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');

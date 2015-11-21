@@ -20,6 +20,10 @@
     "bower": "*"
   },
   "engines": {
-      "npm": "1.2.x"
+    "npm": "1.2.x"
+  },
+  "devDependencies": {
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-copy": "^0.1.0"
   }
 }
