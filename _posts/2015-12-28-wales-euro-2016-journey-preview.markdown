@@ -11,7 +11,7 @@ Of course, Wales were to be drawn in the group that required fans to travel the 
 
 Wales are set to play their first game in Bordeaux against Slovakia, in the South East of France. Then they will play England in Lens in the North of France. Finally, Welsh fans will need to travel back down to the South of France to watch them take on Russia in Toulouse. The map below shows the stadiums where Wales will be playing and it echoes what an effort it will take from Welsh fans to get to all three games.
 
-<iframe src="https://www.google.com/maps/d/embed?mid=z6-fUyW6qfEI.kekspZDCfb28" width="640" height="480"></iframe>
+<iframe src="https://www.google.com/maps/d/embed?mid=z6-fUyW6qfEI.kekspZDCfb28" width="100%" height="480"></iframe>
 
 ## Our Plan
 
