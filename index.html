@@ -2,36 +2,30 @@
 layout: homepage
 ---
 
-<div class="intro-background">
-  <div class="wrapper">
-    <div class="intro-text">
-      <img class="intro-logo animated bounceInDown" src="/assets/images/logo.png">
-      <h1 class="animated bounceInDown">Adam <strong>Morgan</strong></h1>
-      <p class="animated bounceInDown">Designer, developer, Cardiff City season ticket holder and wrestling geek!</p>
-      <a class="button animated bounceInDown" href="/about">Find Out More</a>
-    </div>
+<div class="expanded row text-center">
+  <div class="intro-text">
+    <img class="intro-logo" src="/assets/images/logo.png">
+    <h1 class="">Adam <strong>Morgan</strong></h1>
+    <p class="">Designer, developer, Cardiff City season ticket holder and wrestling geek!</p>
+    <a class="button" href="/about">Find Out More</a>
   </div>
 </div>
 
-<div class="blog-list">
-  <div class="wrapper">
+<div class="row">
 
-    <div class="home">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>My Blog</h1>
-        </div>
-        <ul class="post-list">
-          {% for post in site.posts %}
-            <li class="col-xs-9">
-              <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-            </li>
-            <li class="col-xs-3">
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
+  <div class="small-12 columns">
+    <span class="title">My Blog</span>
   </div>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="small-12 columns">
+        <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span><br>
+      </li>
+      <li class="small-12 columns">
+        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      </li>
+    {% endfor %}
+  </ul>
+
 </div>
