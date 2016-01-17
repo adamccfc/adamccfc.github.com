@@ -7,7 +7,8 @@
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
 
 // Import sass files
-// @import "variables";
-// @import "layout";
-// @import "main";
+@import "variables";
+@import "header";
+@import "footer";
+@import "post";
 // @import "syntax-highlighting";

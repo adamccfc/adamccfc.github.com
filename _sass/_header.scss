@@ -1,0 +1,15 @@
+.intro-background {
+  background: url(../images/mountain-road.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+  width: 100%;
+
+  @media screen and (max-width: $mobile) {
+    background: none;
+    background-color: red;
+  }
+}
+

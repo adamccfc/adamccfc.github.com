@@ -2,13 +2,11 @@
 layout: homepage
 ---
 
-<div class="expanded row text-center">
-  <div class="intro-text">
-    <img class="intro-logo" src="/assets/images/logo.png">
-    <h1 class="">Adam <strong>Morgan</strong></h1>
-    <p class="">Designer, developer, Cardiff City season ticket holder and wrestling geek!</p>
-    <a class="button" href="/about">Find Out More</a>
-  </div>
+<div class="expanded row text-center intro-background">
+  <img class="intro-logo" src="/assets/images/logo.png">
+  <h1 class="">Adam <strong>Morgan</strong></h1>
+  <p class="">Designer, developer, Cardiff City season ticket holder and wrestling geek!</p>
+  <a class="button" href="/about">Find Out More</a>
 </div>
 
 <div class="row">
@@ -17,11 +15,13 @@ layout: homepage
     <span class="title">My Blog</span>
   </div>
 
-  <ul class="post-list">
+  <ul class="no-bullet">
     {% for post in site.posts %}
+    
       <li class="small-12 columns">
         <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span><br>
       </li>
+      <li class="small-12 columns">{{ post.categories | join: ', ' }}</li>
       <li class="small-12 columns">
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
       </li>
