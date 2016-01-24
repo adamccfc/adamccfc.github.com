@@ -1,11 +1,10 @@
-<footer class="site-footer">
+<footer>
     
   <div class="row">
-
     <!-- Links Section -->
-    <div class="small-12 medium-2 column">
-      <h3>Links</h3>
-      <ul>
+    <div class="small-12 medium-3 column">
+      <h5>Quick Links</h5>
+      <ul class="quick-links">
         <!-- <li>Freelance Work</li> -->
         <li><a class="page-link" href="/">Posts</a></li>
         {% for page in site.pages %}
@@ -17,10 +16,10 @@
     </div>
 
     <!-- About Section -->
-    <div class="small-12 medium-7 column">
+    <div class="small-12 medium-5 column">
       <div class="row">
         <div class="small-12 column">
-          <h3>About</h3>
+          <h5>About</h5>
         </div>
         <div class="small-12 column">
           <p class="text">{{ site.description }}</p>
@@ -29,14 +28,14 @@
     </div>
 
     <!-- Social Section -->
-    <div class="small-12 medium-3 column">
-      <h3>Connect</h3>
+    <div class="small-12 medium-4 column">
+      <h5>Connect</h5>
 
-      <ul class="inline-list">
+      <ul class="social-icons">
         {% if site.github_username %}
         <li>
           <a href="https://github.com/{{ site.github_username }}" target="_blank">
-            <i class="fa fa-github-alt"></i>
+            <i class="fa fa-github-alt grow"></i>
           </a>
         </li>
         {% endif %}
@@ -44,7 +43,7 @@
         {% if site.twitter_username %}
         <li>
           <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-            <i class="fa fa-twitter"></i>
+            <i class="fa fa-twitter grow"></i>
           </a>
         </li>
         {% endif %}
@@ -52,7 +51,7 @@
         {% if site.codepen_username %}
         <li>
           <a href="http://codepen.io/{{ site.codepen_username }}" target="_blank">
-            <i class="fa fa-codepen"></i>
+            <i class="fa fa-codepen grow"></i>
           </a>
         </li>
         {% endif %}
@@ -60,7 +59,7 @@
         {% if site.instagram_username %}
         <li>
           <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">
-            <i class="fa fa-instagram"></i>
+            <i class="fa fa-instagram grow"></i>
           </a>
         </li>
         {% endif %}
@@ -68,7 +67,7 @@
         {% if site.stackoverflow_username %}
         <li>
           <a href="http://stackoverflow.com/users/3276321/{{ site.stackoverflow_username }}" target="_blank">
-            <i class="fa fa-stack-overflow"></i>
+            <i class="fa fa-stack-overflow grow"></i>
           </a>
         </li>
         {% endif %}
@@ -76,7 +75,7 @@
         {% if site.linkedin_username %}
         <li>
           <a href="https://uk.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
-            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-linkedin grow"></i>
           </a>
         </li>
         {% endif %}
@@ -86,12 +85,4 @@
 
   </div>
   
-</footer>
-
-<footer class="sub-footer">
-  <div class="row">
-    <div class="small-12 column">
-      <p>&copy; Copyright Adam Morgan 2015</p>
-    </div>
-  </div>
 </footer>

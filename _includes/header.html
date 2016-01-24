@@ -1,19 +1,17 @@
 <header class="site-header">
-
-  <div class="wrapper">
-    <div class="logo">
-      <a class="site-title" href="{{ site.baseurl }}/"><img src="/assets/images/logo.png"></a>
+  <div class="row">
+    <div class="small-12 column">
+      <a class="site-title" href="{{ site.baseurl }}/">
+        <img class="logo" src="/assets/images/logo.png">
+      </a>
+      <nav class="site-nav">
+        <a class="page-link" href="/">Posts</a>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
     </div>
-
-    <nav class="site-nav">
-      <a class="page-link" href="/">Posts</a>
-      {% for page in site.pages %}
-        {% if page.title %}
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-      {% endfor %}
-    </nav>
-
   </div>
-
 </header>

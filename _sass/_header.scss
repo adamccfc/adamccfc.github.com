@@ -1,3 +1,19 @@
+.site-header {
+  background-color: $primary-brand;
+  padding: 10px 0;
+
+  .logo {
+    height: 32px;
+  }
+
+  .site-nav {
+    display: inline;
+    float: right;
+  }
+}
+
+
+
 .intro-background {
   background: url(../images/mountain-road.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;

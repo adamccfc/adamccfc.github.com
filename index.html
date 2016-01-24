@@ -11,18 +11,18 @@ layout: homepage
 
 <div class="row">
 
-  <div class="small-12 columns">
+  <div class="small-12 column">
     <span class="title">My Blog</span>
   </div>
 
   <ul class="no-bullet">
     {% for post in site.posts %}
     
-      <li class="small-12 columns">
+      <li class="small-12 column">
         <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span><br>
       </li>
-      <li class="small-12 columns">{{ post.categories | join: ', ' }}</li>
-      <li class="small-12 columns">
+      <li class="small-12 column">{{ post.categories | join: ', ' }}</li>
+      <li class="small-12 column">
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
       </li>
     {% endfor %}
