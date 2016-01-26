@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<div class="post-hero">
+  <img src="http://cf.c.ooyala.com/c5a3EzeDpbXirx_iKyMSycu_oJv2B9BM/promo268588160">
+</div>
 <div class="row">
   <div class="small-12 column">
 
@@ -9,8 +12,8 @@ layout: default
       <div class="post">
 
         <header class="post-header">
+          <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
           <h1 class="post-title">{{ page.title }}</h1>
-          <p class="post-meta text-center">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
         </header>
 
         <article class="post-content">
