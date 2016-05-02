@@ -1,31 +1,32 @@
 ---
-layout: homepage
+layout: default
 ---
 
-<div class="expanded row text-center intro-background">
-  <img class="intro-logo" src="/assets/images/logo.png">
-  <h1 class="">Adam <strong>Morgan</strong></h1>
-  <p class="">Designer, developer, Cardiff City season ticket holder and wrestling geek!</p>
-  <a class="button" href="/about">Find Out More</a>
-</div>
-
-<div class="row">
-
-  <div class="small-12 column">
-    <span class="title">My Blog</span>
+<div class="row full">
+  <!-- Fixed sidebar -->
+  <div class="sidebar medium-12 large-3 columns">
+    <div class="verticle-align">
+      <img class="intro-logo" src="/images/logo.png">
+      <h1 class="">Adam <strong>Morgan</strong></h1>
+      <p class="">Designer, developer, Cardiff City season ticket holder and wrestling geek!</p>
+      <a class="button" href="/about">Find Out More</a>
+    </div>
   </div>
 
-  <ul class="no-bullet">
+  <!-- Scrollable blog content -->
+  <div class="content medium-12 large-9 columns">
+    <h4>My Blog</h4>
     {% for post in site.posts %}
-    
-      <li class="small-12 column">
-        <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span><br>
-      </li>
-      <li class="small-12 column">{{ post.categories | join: ', ' }}</li>
-      <li class="small-12 column">
-        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-      </li>
+      <article class="post">
+        <h2>{{ post.title }}</h2>
+        <p class="subheader">{{ post.date | date: '%B %d, %Y' }}
+          {% for category in post.categories %}
+            <a href="#"><span class="label {{category}}">{{ category }}</span></a>
+          {% endfor %}
+        </p>      
+        <a  href="{{ post.url | prepend: site.baseurl }}" class="ghost button">Read it &rarrlp;</a>
+      </article>
     {% endfor %}
-  </ul>
+  </div>
 
 </div>

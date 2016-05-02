@@ -3,8 +3,6 @@ layout: post
 title:  "5 Things I Hate About 'Modern' Football"
 date:   2015-10-25 15:57:00
 categories: football
-image:
-  hero: code.jpg
 ---
 
 **I'm not sure whether it's due to getting older, or whether I'm just more cynical, but there's a number of things that are starting to annoy me with today's 'modern' football.**
