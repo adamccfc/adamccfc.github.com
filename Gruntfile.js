@@ -49,30 +49,23 @@ module.exports = function(grunt) {
     jekyll: {
       prod: {
         options: {
-          serve : true,
-          server_port : 4000,
-          watch : true,
-          // drafts : true
+          serve: true,
+          server_port: 4000,
+          watch: true,
+          drafts: false
         }
       },
       dev: {
         options: {
-          serve : true,
-          server_port : 4000,
-          watch : true,
-          drafts : true
+          serve: true,
+          server_port: 4000,
+          watch: true,
+          drafts: true
         }
       }
     },
 
     watch: {
-      // scripts: {
-      //     files: ['js/*.js'],
-      //     tasks: ['concat', 'uglify'],
-      //     options: {
-      //       spawn: false,
-      //     },
-      // },
       css: {
         files: ['_sass/*.scss'],
         tasks: ['compass'],
@@ -106,7 +99,6 @@ module.exports = function(grunt) {
   // 3. Where we tell Grunt we plan to use this plug-in.
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-jekyll');

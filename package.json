@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "*",
     "grunt-contrib-copy": "*",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-compass": "~0.7.0",
