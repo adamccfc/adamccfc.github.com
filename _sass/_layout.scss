@@ -31,6 +31,8 @@
 .sidebar {
   display: inline-block;
   background-color: $primary-brand;
+  text-align: center;
+  padding: 30px 10px;
   h1 {
     color: #fff;
     text-transform: uppercase;
@@ -39,6 +41,22 @@
   h2 {
     font-weight: 300;
     color: #B0CADB;
+  }
+  .logo {
+    height: 30px;
+  }
+  .social-icons {
+    li {
+      display: inline;
+      margin-right: 10px;
+      font-size: 18px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        color: #FC5185;
+      }
+    }
   }
 }
 

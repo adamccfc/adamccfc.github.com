@@ -18,7 +18,7 @@ linkedin_username:        adam-morgan-230a9672
 comments: true
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 # ----------------------- #
 #   3rd Party Settings    #
@@ -26,3 +26,7 @@ markdown: kramdown
 
 # Google Tag Manager
 google_tag_manager_id: GTM-NB9NCK
+
+# Plugins
+gems: 
+  - jekyll-prism-plugin

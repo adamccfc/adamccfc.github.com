@@ -13,6 +13,7 @@ module.exports = function(grunt) {
         src:
           [
             // Add js libs here
+            'libs/prism/prism.js'
           ],
         dest: '_site/assets/js/project-libs.js'
       },
@@ -21,7 +22,8 @@ module.exports = function(grunt) {
           [
             // Add css libs here
             'libs/foundation-sites/dist/foundation.css',
-            'libs/components-font-awesome/css/font-awesome.min.css'
+            'libs/components-font-awesome/css/font-awesome.min.css',
+            'libs/prism/themes/prism.css'
           ],
         dest: '_site/assets/css/project-libs.css'
       }

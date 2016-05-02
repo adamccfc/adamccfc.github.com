@@ -5,8 +5,9 @@ $mobile: 320px;
 $tablet: 768px;
 
 // Brand Colours
-$primary-brand:       #2D3740;
-$primary-brand-dark:  #242D34;
+$primary-brand:       #364F6B;
+$primary-brand-dark:  darken($primary-brand, 10%);
+
 // Primary Colours
 $white:   #ffffff;
 $black:   #000000;

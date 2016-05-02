@@ -17,19 +17,19 @@ We are going to be using hidden input checkboxes to display the content, so when
 
 First off, start by creating a list.
 
-{% highlight html %}
+{% prism html %}
   <ul class="accordion">
     <li></li>
     <li></li>
     <li></li>
   </ul>
-{% endhighlight %}
+{% endprism %}
 
 Each `<li>` tag will contain the title and content of the accordion.
 
 Next you want to create the structure for each accordion. Inside the `<li>` tags you need to add an `<input>` `<label>` and `<article>` tag.
 
-{% highlight html %}
+{% prism html %}
   <ul class="accordion">
       <li>
           <input type="checkbox" name="checkbox" id="accordion1" value="value">
@@ -56,7 +56,7 @@ Next you want to create the structure for each accordion. Inside the `<li>` tags
           </article>
       </li>
   </ul>
-{% endhighlight %}
+{% endprism %}
 
 You now have the right HTML markup to create the accordion.
 
@@ -66,14 +66,14 @@ If you currently look at your accordion with no styling, you will see that you h
 
 First you will need to start off with styling the `<ul>`:
 
-{% highlight css %}
+{% prism css %}
   ul.accordion {
     position: relative;
     list-style: none;
     padding: 0;
     width: 300px;
   }
-{% endhighlight %}
+{% endprism %}
 
 *Note - If you want to make the accordion responsive, set the width as 100%*
 
@@ -81,7 +81,7 @@ We will now start to style the labels. This is where the user will click on to r
 
 Here is the following code I have used to style the labels:
 
-{% highlight css %}
+{% prism css %}
   ul.accordion li label {
     padding: 20px;
     color: #f3f3f3;
@@ -101,12 +101,12 @@ Here is the following code I have used to style the labels:
     right: -15px;
     transition: transform 0.5s;
   }
-{% endhighlight %}
+{% endprism %}
 *Note - I am using a font awesome icon to reinforce to the user that they can click on the element*
 
 We now want to style the `<article>` tag. This is where the content within the accordion will be displayed.
 
-{% highlight css %}
+{% prism css %}
   ul.accordion article {
     display: none;
     padding: 20px;
@@ -125,19 +125,19 @@ We now want to style the `<article>` tag. This is where the content within the a
     margin-bottom: 10px;
     font-size: 14px;
   }
-{% endhighlight %}
+{% endprism %}
 
 Your accordion should now be starting to look nice. However there will be inputs displayed. We next want to hide these with the following code:
 
-{% highlight css %}
+{% prism css %}
   ul.accordion input {
     display: none;
   }
-{% endhighlight %}
+{% endprism %}
 
 Now they have been hidden you will want to add the functionality to the accordion. You can do this with the following code:
 
-{% highlight css %}
+{% prism css %}
   ul.accordion input[type=checkbox]:checked ~ article {
     display: block;
   }
@@ -147,13 +147,13 @@ Now they have been hidden you will want to add the functionality to the accordio
     -webkit-transform: rotate(90 deg);
     -ms-transform: rotate(90 deg);
   }
-{% endhighlight %}
+{% endprism %}
 
 This basically says that when you click the label display the article section. I have also added some transforms to the font-awesome icon to move when you click the label.
 
 Here is all of the CSS markup together:
 
-{% highlight css %}
+{% prism css %}
 ul.accordion {
   position: relative;
   list-style: none;
@@ -219,7 +219,7 @@ ul.accordion input[type = checkbox]: checked ~ label:after {
   -webkit-transform: rotate(90 deg);
   -ms-transform: rotate(90 deg);
 }
-{% endhighlight %}
+{% endprism %}
 
 You can see a live preview of this accordion working here:
 

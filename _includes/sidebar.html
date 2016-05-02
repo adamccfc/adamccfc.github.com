@@ -1,0 +1,60 @@
+<!-- Fixed sidebar -->
+<div class="sidebar medium-12 large-3 columns">
+  <a href="/"><img class="logo" src="/images/logo.png"></a>
+  <h1 class="">Adam <strong>Morgan</strong></h1>
+  <p class="">Designer, developer, Cardiff City season ticket holder and wrestling geek!</p>
+  <a class="button" href="/about">Find Out More</a>
+
+  <h5>Connect</h5>
+
+  <ul class="social-icons">
+    {% if site.github_username %}
+    <li>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank">
+        <i class="fa fa-github-alt grow"></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <li>
+      <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+        <i class="fa fa-twitter grow"></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.codepen_username %}
+    <li>
+      <a href="http://codepen.io/{{ site.codepen_username }}" target="_blank">
+        <i class="fa fa-codepen grow"></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.instagram_username %}
+    <li>
+      <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">
+        <i class="fa fa-instagram grow"></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.stackoverflow_username %}
+    <li>
+      <a href="http://stackoverflow.com/users/3276321/{{ site.stackoverflow_username }}" target="_blank">
+        <i class="fa fa-stack-overflow grow"></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.linkedin_username %}
+    <li>
+      <a href="https://uk.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+        <i class="fa fa-linkedin grow"></i>
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+
+</div>
