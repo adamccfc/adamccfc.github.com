@@ -41,7 +41,7 @@
 }
 
 .post-content {
-  p {
+  & > p {
     &:first-of-type {
       font-family: $secondary-font;
       font-weight: 700;
