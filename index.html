@@ -2,22 +2,17 @@
 layout: default
 ---
 
-<div class="row full">
-  {% include sidebar.html %}
-
-  <!-- Scrollable blog content -->
-  <div class="content medium-12 large-8 columns">
-    {% for post in site.posts %}
-      <article class="post">
-        <h2>{{ post.title }}</h2>
-        <p class="subheader">{{ post.date | date: '%B %d, %Y' }}
-          {% for category in post.categories %}
-            <a href="#"><span class="label {{category}}">{{ category }}</span></a>
-          {% endfor %}
-        </p>      
-        <a  href="{{ post.url | prepend: site.baseurl }}" class="ghost button">Read it &rarrlp;</a>
-      </article>
-    {% endfor %}
-  </div>
-
+<!-- Scrollable blog content -->
+<div class="content medium-12 large-8 columns">
+  {% for post in site.posts %}
+    <article class="post">
+      <h2>{{ post.title }}</h2>
+      <p class="subheader">{{ post.date | date: '%B %d, %Y' }}
+        {% for category in post.categories %}
+          <a href="#"><span class="label {{category}}">{{ category }}</span></a>
+        {% endfor %}
+      </p>      
+      <a  href="{{ post.url | prepend: site.baseurl }}" class="ghost button">Read it &rarrlp;</a>
+    </article>
+  {% endfor %}
 </div>
