@@ -1,5 +1,5 @@
 .post {
-  padding-top: 30px;
+  padding: $gutter-padding;
 }
 
 .post-hero {
@@ -34,7 +34,7 @@
   .post-date {
     display: block;
     font-size: 14px;
-    font-family: $baskerville;
+    font-family: $secondary-font;
     color: $blue;
     color: $grey;
   }
@@ -43,13 +43,12 @@
 .post-content {
   p {
     &:first-of-type {
-      font-family: $baskerville;
+      font-family: $secondary-font;
       font-weight: 700;
       font-size: 18px;
 
       &:first-letter {
         color: $blue;
-        float: left;
         font-size: 30px;
         display: inline;
         line-height: 20px;

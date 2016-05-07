@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+// Media Query Sizes
+$mobile: 320px;
+$tablet: 768px;
+
+// Brand Colours
+$primary-brand:           #364F6B;
+$primary-brand-dark:      darken($primary-brand, 10%);
+$primary-brand-darker:    darken($primary-brand, 20%);
+$primary-brand-light:     lighten($primary-brand, 10%);
+$primary-brand-lighter:   lighten($primary-brand, 20%);
+
+// Primary Colours
+$white:   #ffffff;
+$black:   #000000;
+$blue:    #50B9CE;
+$grey:    #585858;
+
+// Fonts
+$primary-font:    'Open Sans Condensed', sans-serif;
+$secondary-font:  'Lora', serif;
+
+// Padding
+$gutter-padding: 30px;

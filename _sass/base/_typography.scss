@@ -2,7 +2,7 @@ h1,h2,h3,h4,h5,h6 {
   color: $primary-brand;
   font-weight: 900;
   text-transform: uppercase;
-  font-family: $open-sans;
+  font-family: $primary-font;
 }
 
 h1 {
@@ -31,8 +31,14 @@ h6 {
 
 p {
   color: $grey;
+  font-family: $secondary-font;
 }
 
 code {
   border: none;
+  background-color: #f5f2f0;
+}
+
+pre[class*="language-"] {
+  margin: .5em 0 1em;
 }

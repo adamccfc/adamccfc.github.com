@@ -5,7 +5,7 @@ layout: default
   <div class="post-hero" style="background-image: url(/images/posts/{{page.image.hero}})"></div>
 {% endif %}
 
-<div class="content medium-12 large-9 columns">
+<div class="content medium-12 large-8 columns">
 
   <div class="post">
     <header class="post-header">
@@ -15,23 +15,23 @@ layout: default
 
     <article class="post-content">
       {{ content }}
+      
+      {{% if page.comments %}}
+        <div class="comments">
+          <div id="disqus_thread"></div>
+          <!-- Disqus comments section -->
+          <script>
+              (function() {
+                var d = document, s = d.createElement('script');
+                s.src = '//adammorgansblog.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+      {{% endif %}}
+
     </article>
   </div>
-
-  {{% if page.comments %}}
-    <div class="comments">
-      <div id="disqus_thread"></div>
-      <!-- Disqus comments section -->
-      <script>
-          (function() {
-            var d = document, s = d.createElement('script');
-            s.src = '//adammorgansblog.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    </div>
-  {{% endif %}}
-
 </div>
