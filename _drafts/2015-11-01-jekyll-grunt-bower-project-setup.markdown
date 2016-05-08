@@ -7,6 +7,6 @@ categories: football
 
 ### fnfkj
 
-<div class="alert alert-info" role="alert">This is a test</div>
+<div class="callout success" role="alert">This is a test</div>
 
 <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite></blockquote>

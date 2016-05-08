@@ -4,15 +4,38 @@ layout: default
 
 <!-- Scrollable blog content -->
 <div class="content medium-12 large-8 columns">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="post">
-      <h2>{{ post.title }}</h2>
-      <p class="subheader">{{ post.date | date: '%B %d, %Y' }}
-        {% for category in post.categories %}
-          <a href="#"><span class="label {{category}}">{{ category }}</span></a>
-        {% endfor %}
-      </p>      
+      <p class="subheader">{{ post.date | date: '%B %d, %Y' }}</p>      
+      {% for category in post.categories %}
+        <a href="#"><span class="label {{category}}">{{ category }}</span></a>
+      {% endfor %}
+      <h2 class="blog-title">{{ post.title }}</h2>
+      <p>{{ post.content | strip_html | truncatewords:50}}</p>
       <a  href="{{ post.url | prepend: site.baseurl }}" class="ghost button">Read it &rarrlp;</a>
+      <hr>
     </article>
   {% endfor %}
+  
+  <!-- Pagination links -->
+  <ul class="pagination text-center">
+    {% if paginator.previous_page %}
+      <!-- <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a> -->
+      <li class="pagination-previous"><a href="{{ paginator.previous_page_path }}">Previous</a></li>
+    {% else %}
+      <li class="pagination-previous disabled">Previous</li>
+      <!-- <span class="previous">Previous</span> -->
+    {% endif %}
+    <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
+    <!-- <li class="current">{{ paginator.page }}</li> -->
+    <li>Page: {{ paginator.page }} of {{ paginator.total_pages }}</li>
+    <!-- <li><a href="#">{{ paginator.total_pages }}</a></li> -->
+    {% if paginator.next_page %}
+      <!-- <a href="{{ paginator.next_page_path }}" class="next">Next</a> -->
+      <li class="pagination-next"><a href="{{ paginator.next_page_path }}">Next</a></li>
+    {% else %}
+      <!-- <span class="next ">Next</span> -->
+      <li class="pagination-next disabled">Next</li>
+    {% endif %}
+  </ul>
 </div>

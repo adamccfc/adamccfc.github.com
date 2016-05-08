@@ -14,8 +14,10 @@
 @import "base/typography";
 
 // Components - buttons, labels, carousel (reusable code)
+@import "components/buttons";
 @import "components/labels";
 @import "components/callouts";
+@import "components/pagination";
 
 // Layout - header, footer, sidebar, navigation
 @import "layout/header";

@@ -82,9 +82,15 @@
 }
 
 .content {
-  padding: 0 $gutter-padding;
+  padding: $gutter-padding;
 }
 
 .callout {
   border: none;
+}
+
+.subheader {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 0;
 }

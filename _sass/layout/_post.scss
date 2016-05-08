@@ -1,5 +1,12 @@
 .post {
-  padding: $gutter-padding;
+  padding: 0 30px 30px;
+  hr {
+    border-bottom: 3px solid #E8E8E8;
+    margin: 0;
+  }
+  .button {
+    margin-bottom: 30px;
+  }
 }
 
 .post-hero {
@@ -49,9 +56,11 @@
 
       &:first-letter {
         color: $blue;
-        font-size: 30px;
-        display: inline;
-        line-height: 20px;
+        font-size: 72px;
+        display: inline-block;
+        line-height: 45px;
+        float: left;
+        padding-right: 10px;
       }
     }
   }

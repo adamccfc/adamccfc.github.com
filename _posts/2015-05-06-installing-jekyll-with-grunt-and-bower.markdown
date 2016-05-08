@@ -18,7 +18,7 @@ We first need to install NPM which stands for Node Package Manager. You can do t
 
 **package.json**
 
-{% highlight javascript %}
+{% prism javascript %}
 {
   "name": "websiteName",
   "description": "websiteDescription",
@@ -39,7 +39,7 @@ We first need to install NPM which stands for Node Package Manager. You can do t
       "npm": "1.2.x"
   }
 }
-{% endhighlight %}
+{% endprism %}
 
 # Installing Bower
 
@@ -49,7 +49,7 @@ You must then create a bower.json file, which will include the name of your proj
 
 **bower.json**
 
-{% highlight javascript %}
+{% prism javascript %}
 {
   "name": "mywebsite",
   "dependencies": {
@@ -62,7 +62,7 @@ You must then create a bower.json file, which will include the name of your proj
     "bower_components"
   ]
 }
-{% endhighlight %}
+{% endprism %}
 
 Save this file in your projects root directory. Then in your terminal go to your projects directory and run the following command `bower install`. This will install all of the dependancies that you have defined in your bower.json file.
 
@@ -72,7 +72,7 @@ To install Grunt globally on your maching use the following command in your term
 
 **Gruntfile.js**
 
-{% highlight javascript %}
+{% prism javascript %}
 module.exports = function(grunt) {
   
 grunt.initConfig({
@@ -131,6 +131,6 @@ grunt.registerTask('default', [ 'less', 'uglify', 'copy', 'exec:build' ]);
 grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
 
 };
-{% endhighlight %}
+{% endprism %}
 
 To run Jekyll locally, you can run the following command in your projects root directory `grunt exec`. This will serve jekyll locally on your server. If you go to the following URL `http://localhost:4000` you should then be able to see a working version of your website on your local machine.

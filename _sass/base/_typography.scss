@@ -13,6 +13,10 @@ h2 {
   font-size: 26px;
 }
 
+h2.blog-title {
+  font-size: 38px;
+}
+
 h3 {
   font-size: 22px;
 }
@@ -41,6 +45,7 @@ a {
 code {
   border: none;
   background-color: #f5f2f0;
+  text-shadow: 0 1px white;
 }
 
 pre[class*="language-"] {
