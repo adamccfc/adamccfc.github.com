@@ -15,7 +15,7 @@ module.exports = function(grunt) {
             // Add js libs here
             'libs/prism/prism.js'
           ],
-        dest: '/assets/js/project-libs.js'
+        dest: 'assets/js/project-libs.js'
       },
       cssLibs: {
         src: 
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             'libs/components-font-awesome/css/font-awesome.min.css',
             'libs/prism/themes/prism.css'
           ],
-        dest: '/assets/css/project-libs.css'
+        dest: 'assets/css/project-libs.css'
       }
     },
     copy: {
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'libs/components-font-awesome/fonts',
           src: ['**'],
-          dest: '/assets/fonts/'
+          dest: 'assets/fonts/'
         }]
       },
     },
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           sassDir: '_sass',
-          cssDir: '/assets/css',
+          cssDir: 'assets/css',
           environment: 'production'
         }
       }
