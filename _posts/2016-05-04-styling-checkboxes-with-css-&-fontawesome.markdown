@@ -12,19 +12,18 @@ The default checkbox style that browsers display may not suit the style of your 
 
 First of all we're going to start by creating some simple checkboxes with HTML. To do this we will use the following code:
 
-{% prism html %}
->>>>>>> fe292a743a4b8db4311c3849fcc85ddd93d6a5ef
+{% highlight html %}
 <input type="checkbox">
 <input type="checkbox">
 <input type="checkbox">
 <input type="checkbox">
-{% endprism %}
+{% endhighlight %}
 
 Next we're going to style these checkboxes. The first thing we're going to want to change is the browsers default styles. To do this we use the CSS property `appearance`. To make this compatible with different browsers we will have to use different vendor prefixes for the appearance property. You can read more about vendor prefixes [here](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix).
 
 Use the following code to remove the browsers default styles:
 
-{% prism css %}
+{% highlight css %}
 input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -32,13 +31,13 @@ input[type="checkbox"] {
   -o-appearance: none;
   appearance: none;
 }
-{% endprism %}
+{% endhighlight %}
 
 Now the checkboxes should have disappeared as there is no styling for them. We must now create the styles for them. I have used the following as an example:
 
 Now the checkboxes should have disappeared as there is no styling for them. We must now create the styles for them. I have used the following as an example:
 
-{% prism css %}
+{% highlight css %}
 input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -50,13 +49,13 @@ input[type="checkbox"] {
   border-radius: 5px;
   border: 2px solid #9bc1f3;
 }
-{% endprism %}
+{% endhighlight %}
 
 This creates the boxed shape for the checkbox with rounded corners. 
 
 The final step we need to take is adding a FontAwesome icon to the checkbox when it is checked. We can do this in CSS by using the `:after` and `:checked` CSS psuedo classes.
 
-{% prism css %}
+{% highlight css %}
 input[type="checkbox"]:checked:after {
   display: block;
   outline: none;
@@ -68,7 +67,7 @@ input[type="checkbox"]:checked:after {
   margin-left: 4px;
   margin-top: 4px;
 }
-{% endprism %}
+{% endhighlight %}
 
 You can see the fully working example of this code below:
 

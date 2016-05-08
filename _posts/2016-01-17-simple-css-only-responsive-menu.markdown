@@ -15,7 +15,7 @@ I have created a simple responsive css only navigation menu, that is easily cuso
 
 First we will start with the HTML used to create the navigation. *Please note that when coding the navigation initially, I used the HTML preprocessor language known as [Jade](http://jade-lang.com/).
 
-{% prism html %}
+{% highlight html %}
 <header>
   <a href="/"><img src="http://placehold.it/350x150" class="logo"/></a>
   <nav>
@@ -31,7 +31,7 @@ First we will start with the HTML used to create the navigation. *Please note th
     </ul>
   </nav>
 </header>
-{% endprism %}
+{% endhighlight %}
 
 The menu has been placed within the `<header>` tag. This has allowed us to separate the image (which you can use to place your logo) and the navigation from one another.
 
@@ -41,7 +41,7 @@ To make the mobile navigation clickable on smaller devices we have used a checkb
 
 Now the navigation has been built, we need to add styles to make it function correctly. Use the following styles to get the menu functioning as per the example.
 
-{% prism css %}
+{% highlight css %}
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -151,7 +151,7 @@ nav label {
     font-size: 28px;
   }
 }
-{% endprism %}
+{% endhighlight %}
 
 The magic happens when the screen size gets to smaller than 800px. The label is displayed for the checkbox, and when the label is clicked, the menu appears. This is done with the `:checked` pseudo-class and the `~` (tiled) CSS selector. 
 
