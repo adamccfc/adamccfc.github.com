@@ -1,0 +1,49 @@
+footer {
+  background-color: $primary-brand;
+  padding: 20px 0;
+  
+  h1,h2,h3,h4,h5,h6 {
+    position: relative;
+    font-weight: 900;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: $white;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      bottom: -10px;
+      left: 0;
+      border-bottom: 2px solid $blue;
+    }
+  }
+
+  a { color: $blue; }
+  
+  p { 
+    color: #677A8A;
+    font-size: 12px;
+  }
+
+  ul.social-icons {
+    li {
+      display: inline;
+      margin-right: 10px;
+      font-size: 18px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+    font-size: 12px;
+    li {
+      list-style: none;
+    }
+  }
+}
+

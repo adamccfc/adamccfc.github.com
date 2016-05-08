@@ -1,0 +1,125 @@
+// center
+
+@mixin centerer {
+  position: relative;
+  top: 50%;
+  transform:translateY(85%);
+}
+
+.row.full {
+  max-width: 100%;
+}
+
+// Sidebar layout
+.sidebar {
+  background-color: $primary-brand;
+  padding: $gutter-padding-large;
+  display: table;
+  height: 100%;
+  .centered {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+  }
+  .intro {
+    .logo {
+      height: 32px;
+      margin-top: -22px;
+      margin-right: 10px;
+    }
+    .name {
+      font-family: $primary-font;
+      color: $white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 42px;
+      display: inline-block;
+      margin-bottom: 20px;
+      @media(max-width: $mobile) {
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+    }
+    .strapline {
+      display: block;
+      font-size: 18px;
+      font-family: $secondary-font;
+      color: $white;
+      margin-bottom: 20px;
+      @media(max-width: $mobile) {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .social-icons {
+    margin: 0;
+    li {
+      display: inline;
+      margin-right: 20px;
+      font-size: 32px;
+      @media(max-width: 1129px) {
+        margin-right: 13px;
+      }
+      @media(max-width: 1023px) {
+        margin-right: 20px;
+      }
+      @media(max-width: $mobile) {
+        font-size: 26px;
+        margin-right: 10px;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        color: $primary-brand-lighter;
+      }
+    }
+  }
+}
+@media only screen and (min-width: $desktop) {
+.sidebar {
+  position: fixed;
+  background-color: $primary-brand;
+  top: 0;
+  bottom: 0;
+  h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  h2 {
+    font-weight: 300;
+    color: #B0CADB;
+    }
+  }
+  .middle-header {
+    text-align: right;
+    @include centerer;
+  }
+}
+
+
+.middle-header {
+  text-align: center;
+}
+
+.content {
+  padding: $gutter-padding-large;
+  @media(max-width: $tablet) {
+    padding: $gutter-padding-medium;
+  }
+  @media(max-width: $mobile) {
+    padding: $gutter-padding-small;
+  }
+}
+
+.callout {
+  border: none;
+}
+
+.subheader {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 0;
+}

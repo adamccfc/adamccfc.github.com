@@ -4,7 +4,6 @@ title:  "8 Bit CSS Art"
 date:   2015-08-03 20:47:00
 categories: css
 ---
-
 I was randomly trawling codepen a few nights ago, and came across [this cool method](http://codepen.io/nucliweb/pen/RPqrQY) for creating 8 bit art using SCSS and one html div tag. 
 
 I decided to use this method to create the classic 8 bit Mario and Luigi designs.

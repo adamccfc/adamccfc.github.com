@@ -1,0 +1,56 @@
+.site-header {
+  background-color: $primary-brand;
+  padding: 10px 0;
+
+  .logo {
+    height: 32px;
+  }
+
+  .site-nav {
+    display: inline;
+    float: right;
+    a {
+      color: $white;
+      margin-right: 10px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+.intro-background {
+  background: url(../images/mountain-road.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+
+  @media screen and (max-width: $mobile) {
+    background: none;
+    background-color: red;
+  }
+
+  .verticle-align {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 30px;
+    color: $white;
+
+    .intro-logo {
+      height: 40px;
+    }
+  }
+}
+

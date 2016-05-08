@@ -5,11 +5,23 @@ description: > # this means to ignore newlines until "baseurl:"
   I'm Adam, a developer from Mountain Ash, with over 6 years experience. I design and build beautiful websites that are very user friendly.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://adammorgan.wales" # the base hostname & protocol for your site
-twitter_username: adamtaffymorgan,
-github_username:  adamccfc
+
+# Social Media Accounta
+twitter_username:         adamtaffymorgan
+github_username:          adamccfc
+codepen_username:         AdamCCFC
+instagram_username:       adamccfc
+stackoverflow_username:   adam-morgan
+linkedin_username:        adam-morgan-230a9672
+
+# Use comments
+comments: true
+
+# Use pagination
+paginate: 8
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 # ----------------------- #
 #   3rd Party Settings    #
@@ -17,3 +29,8 @@ markdown: kramdown
 
 # Google Tag Manager
 google_tag_manager_id: GTM-NB9NCK
+
+# Plugins
+gems: 
+  - jekyll-prism-plugin
+  - jekyll-paginate

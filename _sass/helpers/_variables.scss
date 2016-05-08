@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+// Media Query Sizes
+$small-mobile:  320px;
+$mobile:        414px;
+$tablet:        768px;
+$desktop:       1024px;
+
+// Brand Colours
+$primary-brand:           #364F6B;
+$primary-brand-dark:      darken($primary-brand, 10%);
+$primary-brand-darker:    darken($primary-brand, 20%);
+$primary-brand-light:     lighten($primary-brand, 10%);
+$primary-brand-lighter:   lighten($primary-brand, 20%);
+
+// Primary Colours
+$white:       #ffffff;
+$black:       #000000;
+$blue:        #2199e8;
+$blue-dark:   darken($blue, 10%);
+$grey:        #585858;
+
+// Fonts
+$primary-font:    'Open Sans Condensed', sans-serif;
+$secondary-font:  'Lora', serif;
+
+// Padding
+$gutter-padding-large: 30px;
+$gutter-padding-medium: 20px;
+$gutter-padding-small: 10px;

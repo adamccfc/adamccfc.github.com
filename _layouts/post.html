@@ -1,15 +1,37 @@
 ---
 layout: default
 ---
-<div class="post">
+{% if page.image.hero %}
+  <div class="post-hero" style="background-image: url(/images/posts/{{page.image.hero}})"></div>
+{% endif %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<div class="content medium-12 large-8 columns">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <div class="post">
+    <header class="post-header">
+      <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
 
+    <article class="post-content">
+      {{ content }}
+      
+      {{% if page.comments %}}
+        <div class="comments">
+          <div id="disqus_thread"></div>
+          <!-- Disqus comments section -->
+          <script>
+              (function() {
+                var d = document, s = d.createElement('script');
+                s.src = '//adammorgansblog.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+      {{% endif %}}
+
+    </article>
+  </div>
 </div>

@@ -14,16 +14,12 @@
     })(window,document,'script','dataLayer','GTM-NB9NCK');</script>
     <!-- End Google Tag Manager -->
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="row full">
+      {% include sidebar.html %}
+      {{ content }}
     </div>
 
-    {% include footer.html %}
-
+    <script type="text/javascript" src="/assets/js/project-libs.js"></script>
   </body>
 
 </html>

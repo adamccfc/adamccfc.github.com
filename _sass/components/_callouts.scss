@@ -1,0 +1,31 @@
+.callout {
+  text-shadow: 0 1px white;
+}
+
+.callout.primary {
+  p {
+    color: #577E98;
+  }
+}
+
+.callout.secondary {
+
+}
+
+.callout.success {
+  p {
+    color: #619E77;
+  }
+}
+
+.callout.warning {
+  p {
+    color: #9A7C3B;
+  }
+}
+
+.callout.alert {
+  p {
+    color: #BD7264;
+  }
+}

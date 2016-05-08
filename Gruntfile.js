@@ -1,59 +1,114 @@
 module.exports = function(grunt) {
 
-grunt.initConfig({
-  less: {
-    production: {
+  // 1. All configuration goes here 
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
+    concat: {
       options: {
-        paths: ["bower_components/bootstrap/less"],
-        yuicompress: true
+        banner: '<%= banner %>',
+        stripBanners: true
       },
-      files: {
-        "assets/css/application.min.css": "assets/_less/application.less"
-      }
-    }
-  },
-  uglify: {
-    jquery: {
-      files: {
-        'assets/js/jquery.min.js': 'bower_components/jquery/jquery.js'
+      jsLibs: {
+        src:
+          [
+            // Add js libs here
+            'libs/prism/prism.js'
+          ],
+        dest: '_site/assets/js/project-libs.js'
+      },
+      cssLibs: {
+        src: 
+          [
+            // Add css libs here
+            'libs/foundation-sites/dist/foundation.css',
+            'libs/components-font-awesome/css/font-awesome.min.css',
+            'libs/prism/themes/prism.css'
+          ],
+        dest: '_site/assets/css/project-libs.css'
       }
     },
-    bootstrap: {
-      files: {
-        'assets/js/bootstrap.min.js': ['bower_components/bootstrap/js/bootstrap-collapse.js',
-                                       'bower_components/bootstrap/js/bootstrap-scrollspy.js',
-                                       'bower_components/bootstrap/js/bootstrap-button.js',
-                                       'bower_components/bootstrap/js/bootstrap-affix.js']
+    copy: {
+      main: {
+        files: [{
+          expand: true,
+          cwd: 'libs/components-font-awesome/fonts',
+          src: ['**'],
+          dest: '_site/assets/fonts/'
+        }]
+      },
+    },
+    compass: {
+      dist: {
+        options: {
+          sassDir: '_sass',
+          cssDir: '_site/assets/css',
+          environment: 'production'
+        }
       }
-    }
-  },
-  copy: {
-    bootstrap: {
-      files: [
-        {expand: true, cwd: 'bower_components/bootstrap/img/', src: ['**'], dest: 'assets/img/'},
-        {expand: true, cwd: 'bower_components/bootstrap-grid-only/css/', src: ['**'], dest: 'css/'}
-      ]
-    }
-  },
-  exec: {
-    build: {
-      cmd: 'jekyll build'
     },
-    serve: {
-      cmd: 'jekyll serve --watch'
-    },
-    deploy: {
-      cmd: 'rsync --progress -a --delete -e "ssh -q" _site/ myuser@host:mydir/'
-    }
-  }
-});
 
-grunt.loadNpmTasks('grunt-contrib-uglify');
-grunt.loadNpmTasks('grunt-contrib-less');
-grunt.loadNpmTasks('grunt-contrib-copy');
-grunt.loadNpmTasks('grunt-exec');
+    jekyll: {
+      prod: {
+        options: {
+          serve: true,
+          server_port: 4000,
+          watch: true,
+          drafts: false
+        }
+      },
+      dev: {
+        options: {
+          serve: true,
+          server_port: 4000,
+          watch: true,
+          drafts: true
+        }
+      }
+    },
 
-grunt.registerTask('default', [ 'less', 'uglify', 'copy', 'exec:build' ]);
-grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
+    watch: {
+      css: {
+        files: ['_sass/**/*.scss'],
+        tasks: ['compass'],
+        options: {
+          spawn: false,
+        }
+      },
+      options : {
+        spawn : false,
+        atBegin : true
+      }
+    },
+
+    concurrent: {
+      prod : {
+        tasks: ['concat', 'watch', 'jekyll:prod'],
+        options: {
+          logConcurrentOutput: true
+        }
+      },
+      dev : {
+        tasks: ['concat', 'copy', 'watch', 'jekyll:dev'],
+        options: {
+          logConcurrentOutput: true
+        }
+      }
+    }
+
+  });
+
+  // 3. Where we tell Grunt we plan to use this plug-in.
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-concurrent');
+
+
+  // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
+  grunt.registerTask('default', ['concurrent:prod']);
+  grunt.registerTask('dev', ['concurrent:dev']);
 
 };
