@@ -1,5 +1,11 @@
 .post {
-  padding: 0 30px 30px;
+  padding: 0 $gutter-padding-large $gutter-padding-large;
+  @media(max-width: $tablet) {
+    padding: 0 $gutter-padding-medium $gutter-padding-medium;
+  }
+  @media(max-width: $mobile) {
+    padding: 0 $gutter-padding-small $gutter-padding-small;
+  }
   hr {
     border-bottom: 3px solid #E8E8E8;
     margin: 0;

@@ -13,7 +13,7 @@
 // Sidebar layout
 .sidebar {
   background-color: $primary-brand;
-  padding: $gutter-padding;
+  padding: $gutter-padding-large;
   display: table;
   height: 100%;
   .centered {
@@ -35,6 +35,10 @@
       font-size: 42px;
       display: inline-block;
       margin-bottom: 20px;
+      @media(max-width: $mobile) {
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
     }
     .strapline {
       display: block;
@@ -42,6 +46,10 @@
       font-family: $secondary-font;
       color: $white;
       margin-bottom: 20px;
+      @media(max-width: $mobile) {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
     }
   }
   .social-icons {
@@ -50,6 +58,16 @@
       display: inline;
       margin-right: 20px;
       font-size: 32px;
+      @media(max-width: 1129px) {
+        margin-right: 13px;
+      }
+      @media(max-width: 1023px) {
+        margin-right: 20px;
+      }
+      @media(max-width: $mobile) {
+        font-size: 26px;
+        margin-right: 10px;
+      }
       &:last-of-type {
         margin-right: 0;
       }
@@ -59,7 +77,7 @@
     }
   }
 }
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: $desktop) {
 .sidebar {
   position: fixed;
   background-color: $primary-brand;
@@ -87,7 +105,13 @@
 }
 
 .content {
-  padding: $gutter-padding;
+  padding: $gutter-padding-large;
+  @media(max-width: $tablet) {
+    padding: $gutter-padding-medium;
+  }
+  @media(max-width: $mobile) {
+    padding: $gutter-padding-small;
+  }
 }
 
 .callout {

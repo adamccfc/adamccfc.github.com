@@ -1,8 +1,10 @@
 @charset "utf-8";
 
 // Media Query Sizes
-$mobile: 320px;
-$tablet: 768px;
+$small-mobile:  320px;
+$mobile:        414px;
+$tablet:        768px;
+$desktop:       1024px;
 
 // Brand Colours
 $primary-brand:           #364F6B;
@@ -23,4 +25,6 @@ $primary-font:    'Open Sans Condensed', sans-serif;
 $secondary-font:  'Lora', serif;
 
 // Padding
-$gutter-padding: 30px;
+$gutter-padding-large: 30px;
+$gutter-padding-medium: 20px;
+$gutter-padding-small: 10px;
