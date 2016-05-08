@@ -13,6 +13,7 @@ The default checkbox style that browsers display may not suit the style of your 
 First of all we're going to start by creating some simple checkboxes with HTML. To do this we will use the following code:
 
 {% prism html %}
+>>>>>>> fe292a743a4b8db4311c3849fcc85ddd93d6a5ef
 <input type="checkbox">
 <input type="checkbox">
 <input type="checkbox">
@@ -32,6 +33,8 @@ input[type="checkbox"] {
   appearance: none;
 }
 {% endprism %}
+
+Now the checkboxes should have disappeared as there is no styling for them. We must now create the styles for them. I have used the following as an example:
 
 Now the checkboxes should have disappeared as there is no styling for them. We must now create the styles for them. I have used the following as an example:
 
