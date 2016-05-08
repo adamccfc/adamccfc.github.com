@@ -4,8 +4,7 @@ title:  "5 Things I Hate About 'Modern' Football"
 date:   2015-10-25 15:57:00
 categories: football
 ---
-
-**I'm not sure whether it's due to getting older, or whether I'm just more cynical, but there's a number of things that are starting to annoy me with today's 'modern' football.**
+I'm not sure whether it's due to getting older, or whether I'm just more cynical, but there's a number of things that are starting to annoy me with today's 'modern' football.
 
 After watching "Super Sunday" today, it has just further ignited my fury at the points I'm about to make. So let's not waste any more time and get into it.
 

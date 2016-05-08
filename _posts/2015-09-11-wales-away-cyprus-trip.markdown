@@ -4,7 +4,6 @@ title:  "Wales Away - Cyprus 2015"
 date:   2015-09-11 18:25:00
 categories: football wales
 ---
-
 It's been nearly 10 months since my last away trip with Wales, when 12 of us set off to Brussels to watch the team get a cracking draw away to the team ranked second in the world.
 
 This time it was a much further joruney to watch my beloved country try and kick on their campaign to qualify for a major tournament for the first time in 58 years. Cyprus was the destination. Three of my mates and I decided to take the 4 and a half hour flight to Larnaca to continue to support Wales.

@@ -4,8 +4,7 @@ title:  "Simple CSS Only Responsive Menu"
 date:   2016-01-17 19:45:00
 categories: css responsive web design tutorial
 ---
-
-**I have created a simple responsive css only navigation menu, that is easily cusotmisable with some CSS knowledge. This tutorial will explain the code used to build the navigation in the example below.**
+I have created a simple responsive css only navigation menu, that is easily cusotmisable with some CSS knowledge. This tutorial will explain the code used to build the navigation in the example below.
 
 <p data-height="211" data-theme-id="0" data-slug-hash="RrZomP" data-default-tab="result" data-user="AdamCCFC" class='codepen'>See the Pen <a href='http://codepen.io/AdamCCFC/pen/RrZomP/'>CSS Only Responsive Menu</a> by Adam Morgan (<a href='http://codepen.io/AdamCCFC'>@AdamCCFC</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>

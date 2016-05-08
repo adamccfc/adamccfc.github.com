@@ -4,7 +4,6 @@ title:  "Styling Checkboxes with CSS & FontAwesome"
 date:   2016-05-04 10:33:19
 categories: web tutorial
 ---
-
 The default checkbox style that browsers display may not suit the style of your website. This tutorial will teach you how to create a custom checkbox that will fit in with the style of your website by using CSS and [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/).
 
 <div class="callout warning">

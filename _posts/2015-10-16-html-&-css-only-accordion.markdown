@@ -6,8 +6,7 @@ categories: tutorials css html accordion
 image:
   hero: code.jpg
 ---
-
-**Using only CSS and HTML you can build a beautifully sleek accordion for your website.**
+Using only CSS and HTML you can build a beautifully sleek accordion for your website.
 
 This tutorial will teach you how to build an accordion that has been built using CSS and HTML. There are lots of methods you can use to build an accordion, especially with the use of Javascript. However, some people may have Javascript turned off so the accordion will not work properly.
 

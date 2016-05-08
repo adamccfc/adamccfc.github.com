@@ -4,8 +4,7 @@ title:  "Wales' Euro 2016 Journey Preview"
 date:   2015-12-28 10:33:19
 categories: football
 ---
-
-**At the beginning of December we found out who Wales would be facing at a major tournament for the first time since 1958. They were Slovakia, Russia and of course England. It was bound to happen, wasn't it?!**
+At the beginning of December we found out who Wales would be facing at a major tournament for the first time since 1958. They were Slovakia, Russia and of course England. It was bound to happen, wasn't it?!
 
 Of course, Wales were to be drawn in the group that required fans to travel the most distance over the group stage, a colossal 1,543km. So the planning of this epic journey ahead of my friends, farther and I was to be a great undertaking.
 
