@@ -2,7 +2,7 @@
 layout: post
 title:  "Pug/Jade Tutorial - Introduction - Part 1"
 date:   2016-06-26 10:33:19
-categories: tutorial jade
+categories: tutorial pug jade
 ---
 Development time is an important factor in today's fast paced coding environment. Preprocessors have been introduced as a way of reducing the amount of code needed to be written in an attempt to speed up development time.
 
