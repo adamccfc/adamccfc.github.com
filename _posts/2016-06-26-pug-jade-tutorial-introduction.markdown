@@ -12,7 +12,7 @@ There are also HTML templating languages such as HAML and the one I am going to 
 
 I have been using Pug/Jade for the past few years in work, and have decided to write up what I have learnt about the templating language in this time as there is not much documentation about the language out there. If I can help one person from these tutorials then I think it will have been worthwhile.
 
-<div class="callout info">
+<div class="callout primary">
   <p>I will refer to the language as Pug going forward, but note that these tutorials are also valid with Jade.</p>
 </div>
 
@@ -68,7 +68,7 @@ The following example shows how the syntax is shorter and quicker to code than y
 
 *Renders to the following HTML:*
 {% highlight html %}
-<div class=”container></div>
+<div class="container"></div>
 {% endhighlight %}
 
 As you can see it is much shorter and will definitely improve your productivity when you learn the syntax.
