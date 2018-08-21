@@ -26,19 +26,29 @@ const IndexPage = () => (
             </a>
           </li>
           <li className="icons-list__instagram">
-            <FontAwesomeIcon icon={["fab","instagram"]} />
+            <a href="https://www.instagram.com/adamccfc/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={["fab","instagram"]} />
+            </a>
           </li>
           <li className="icons-list__github">
-            <FontAwesomeIcon icon={["fab","github"]} />
+            <a href="https://github.com/adamccfc" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={["fab","github"]} />
+            </a>
           </li>
           <li className="icons-list__stackoverflow">
-            <FontAwesomeIcon icon={["fab","stack-overflow"]} />
+            <a href="https://stackoverflow.com/users/3276321/adam-morgan" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={["fab","stack-overflow"]} />
+            </a>
           </li>
           <li className="icons-list__codepen">
-            <FontAwesomeIcon icon={["fab","codepen"]} />
+            <a href="https://codepen.io/AdamCCFC/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={["fab","codepen"]} />
+            </a>
           </li>
           <li className="icons-list__linkedin">
-            <FontAwesomeIcon icon={["fab","linkedin"]} />
+            <a href="https://uk.linkedin.com/in/adam-morgan-230a9672" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={["fab","linkedin"]} />
+            </a>
           </li>
         </ul>
       </div>
