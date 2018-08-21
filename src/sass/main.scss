@@ -1,11 +1,39 @@
+// Import Bootstrap grid
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/grid";
+
 @import 'variables';
 
-// Animations
+//== Animations
 @import 'animations/animations';
 @import 'animations/fade-in-down';
 
-// Base
+//== Base
 @import 'base/typography';
 
-// Layout
-@import 'layout/intro';
+//== Page specific styles
+@import 'pages/home';
+
+//== Components
+// Lists
+@import 'components/lists/icons-list';
+
+
+.contact {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    height: 100px;
+    width: 100px;
+    background-image: url('../images/icons/semicircular-right-arrow.svg');
+    background-size: 60px 80px;
+    background-repeat: no-repeat;
+  }
+}

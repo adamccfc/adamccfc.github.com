@@ -1,0 +1,30 @@
+.home-container {
+  background-color: $brand-primary;
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__intro {
+    h1 {
+      color: $black;
+      font-size: 6em;
+      line-height: 1em;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: $white;
+      font-size: 4em;
+      line-height: 1em;
+      margin-top: 0;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
+
