@@ -1,0 +1,31 @@
+//== Colours
+// Base colours
+$white:                     #ffffff;
+$black:                     #000000;
+
+// Primary colours
+$turquoise:                 #4EC5C1;
+
+// Brand colours
+$brand-primary:             $turquoise;
+
+//== Fonts
+// Font used for site headings
+$font-heading:              'Montserrat', sans-serif;
+// Font used for main body of website
+$font-body:                 'Merriweather', serif;
+
+//== Media queries breakpoints
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+// Small screen / tablet
+$screen-sm:                  768px !default;
+// Medium screen / desktop
+$screen-md:                  992px !default;
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1) !default;
+$screen-sm-max:              ($screen-md - 1) !default;
+$screen-md-max:              ($screen-lg - 1) !default;

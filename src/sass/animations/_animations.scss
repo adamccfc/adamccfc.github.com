@@ -1,0 +1,10 @@
+.animation {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  @for $i from 1 to 20 {
+    &__delay-#{$i} {
+      animation-delay: $i * 0.25s;
+    }
+  }
+}
