@@ -18,8 +18,8 @@ const IndexPage = () => (
           <h1><span className="animation animation__fade-in-down">Adam </span><span className="animation animation__fade-in-down animation__delay--0-25">Morgan</span></h1>
           <h2><span className="animation animation__fade-in-down animation__delay--0-5">Front end </span><span className="animation animation__fade-in-down animation__delay--0-75">developer</span></h2>
         </div>
-        <p class="contact">Need a website built? Get in touch.</p>
-        <ul className="icons-list">
+        <p class="contact animation animation__fade-in-up animation__delay--1-25">Need a website built? Get in touch.</p>
+        <ul className="icons-list animation animation__fade-in-up animation__delay--1-5">
           <li className="icons-list__twitter">
             <a href="http://www.twitter.com/adamtaffymorgan" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={["fab","twitter"]} />
