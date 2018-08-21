@@ -13,8 +13,8 @@ library.add(fas, far, fab)
 const IndexPage = () => (
   <Layout>
     <div className="intro">
-      <h1><span className="animation animation__fade-in-down">Adam</span><span className="animation animation__fade-in-down animation__delay-2"> Morgan</span></h1>
-      <h2><span className="animation animation__fade-in-down animation__delay-4">Front end</span><span className="animation animation__fade-in-down animation__delay-6"> developer</span></h2>
+      <h1><span className="animation animation__fade-in-down">Adam</span><span className="animation animation__fade-in-down animation__delay--0-25"> Morgan</span></h1>
+      <h2><span className="animation animation__fade-in-down animation__delay--0-5">Front end</span><span className="animation animation__fade-in-down animation__delay--0-75"> developer</span></h2>
     </div>
     <div className="online-status">Online</div>
     <ul className="meta">
