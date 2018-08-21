@@ -1,3 +1,26 @@
+// Calculates the rem font size
+@mixin font-size($sizeValue: 1.6) {
+  font-size: $sizeValue + em;
+}
+
+// Sets different font sizes depending on the screen size
+@mixin responsive-font-sizes($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      @include font-size($fs-font-size);
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        @include font-size($fs-font-size);
+      }
+    }
+  }
+}
+
+$h1-font-sizes: (null: 3, $screen-md: 5, $screen-lg: 6);
+$h2-font-sizes: (null: 2, $screen-md: 4);
+$h3-font-sizes: (null: 1.6, $screen-md: 3);
+
 body {
   font-family: $font-body;
   margin: 0;
@@ -7,4 +30,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-heading;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+h1 {
+  @include responsive-font-sizes($h1-font-sizes);
+}
+
+h2 {
+  @include responsive-font-sizes($h2-font-sizes);
+}
+
+h3 {
+  @include responsive-font-sizes($h3-font-sizes);
 }
