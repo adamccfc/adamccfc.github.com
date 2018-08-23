@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import "../sass/main.scss"
+// Add styles to site
+import '../sass/main.scss'
 
 const Layout = ({ children, data }) => (
   <StaticQuery
