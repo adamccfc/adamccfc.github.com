@@ -1,11 +1,10 @@
 .home-container {
+  display: flex;
+  flex-direction: column;
   background-color: $brand-primary;
-
-  .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+  min-height: 100vh;
+  padding-left: 15px;
+  padding-right: 15px;
 
   &__intro {
     h1 {

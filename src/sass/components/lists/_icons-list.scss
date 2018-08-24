@@ -1,3 +1,8 @@
+$icon-fonts: (
+  null: 1.6,
+  $screen-md: 4
+);
+
 .icons-list {
   width: 100%;
   padding: 0;
@@ -15,7 +20,7 @@
 
     a {
       color: $black;
-      font-size: 2em;
+      @include responsive-font-sizes($icon-fonts);
     }
   }
 }
