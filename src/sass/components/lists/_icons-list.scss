@@ -1,6 +1,4 @@
 .icons-list {
-  width: 100%;
-  padding: 0;
   list-style: none;
   margin-top: 20px;
   margin-left: 30px;
@@ -15,7 +13,11 @@
 
     a {
       color: $black;
-      font-size: 2em;
+      font-size: 1em;
+
+      @media (min-width: $screen-md) {
+        font-size: 2em;
+      }
     }
   }
 }

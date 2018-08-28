@@ -13,21 +13,3 @@
 //== Components
 // Lists
 @import 'components/lists/icons-list';
-
-
-.contact {
-  position: relative;
-  margin-top: auto;
-  margin-bottom: 0;
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: -50px;
-    height: 100px;
-    width: 100px;
-    background-image: url('../images/icons/semicircular-right-arrow.svg');
-    background-size: 60px 80px;
-    background-repeat: no-repeat;
-  }
-}
