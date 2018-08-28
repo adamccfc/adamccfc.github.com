@@ -13,13 +13,12 @@ library.add(fas, far, fab)
 const IndexPage = () => (
   <Layout>
     <div className="home-container">
-      <div className="container">
-        <div className="home-container__intro">
-          <h1><span className="animation animation__fade-in-down">Adam </span><span className="animation animation__fade-in-down animation__delay--0-5">Morgan</span></h1>
-          <h2><span className="animation animation__fade-in-down animation__delay--1">Front end </span><span className="animation animation__fade-in-down animation__delay--1-5">developer</span></h2>
-        </div>
-        <p class="contact animation animation__fade-in-up animation__delay--2">Need a website built? Get in touch.</p>
-        <ul className="icons-list animation animation__fade-in-up animation__delay--2">
+      <div className="home-container__intro">
+        <h1><span className="animation animation__fade-in-down">Adam </span><span className="animation animation__fade-in-down animation__delay--0-5">Morgan</span></h1>
+        <h2><span className="animation animation__fade-in-down animation__delay--1">Front end </span><span className="animation animation__fade-in-down animation__delay--1-5">developer</span></h2>
+      </div>
+      <p className="contact animation animation__fade-in-up animation__delay--2">Need a website built? Get in touch.</p>
+      <ul className="icons-list animation animation__fade-in-up animation__delay--2">
           <li className="icons-list__twitter">
             <a href="http://www.twitter.com/adamtaffymorgan" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={["fab","twitter"]} />
@@ -51,7 +50,6 @@ const IndexPage = () => (
             </a>
           </li>
         </ul>
-      </div>
     </div>
   </Layout>
 )
