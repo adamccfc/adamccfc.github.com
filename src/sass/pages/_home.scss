@@ -1,24 +1,62 @@
-.home-container {
-  display: flex;
-  flex-direction: column;
+.home {
   background-color: $brand-primary;
   min-height: 100vh;
-  padding-left: 15px;
-  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw;
+
+  @media (min-width: $screen-md) {
+    padding: 0 10vw;
+  }
 
   &__intro {
+    margin-top: 5vh;
+
+    @media (min-width: $screen-md) {
+      margin-top: 0 10vw;
+    }
+
     h1 {
-      margin-bottom: 0;
+      margin: 0;
+      line-height: 1em;
     }
 
     h2 {
       color: $white;
-      margin-top: 0;
+      margin: 0;
+      line-height: 1em;
     }
 
     span {
       display: block;
     }
   }
-}
 
+  &__contact {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-left: 40px;
+    @include font-size(0.85);
+
+    @media (min-width: $screen-md) {
+      padding-left: 50px;
+      @include font-size(1);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 70px;
+      width: 100px;
+      background-image: url('../images/icons/semicircular-right-arrow.svg');
+      background-size: 50px 70px;
+      background-repeat: no-repeat;
+
+      @media (min-width: $screen-md) {
+        background-size: 60px 80px;
+      }
+    }
+  }
+}

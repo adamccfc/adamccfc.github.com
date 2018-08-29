@@ -1,15 +1,11 @@
-// Import Bootstrap grid
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/grid";
-
+//== Dependencies
 @import 'variables';
 
 //== Animations
 @import 'animations/animations';
 
 //== Base
+@import 'base/global';
 @import 'base/typography';
 
 //== Page specific styles
@@ -18,20 +14,3 @@
 //== Components
 // Lists
 @import 'components/lists/icons-list';
-
-
-.contact {
-  position: relative;
-  margin-bottom: 0;
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: -50px;
-    height: 100px;
-    width: 100px;
-    background-image: url('../images/icons/semicircular-right-arrow.svg');
-    background-size: 60px 80px;
-    background-repeat: no-repeat;
-  }
-}
