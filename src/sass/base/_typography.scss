@@ -17,14 +17,14 @@
   }
 }
 
-$h1-font-sizes: (null: 3.5, $screen-md: 5, $screen-lg: 6);
-$h2-font-sizes: (null: 2.5, $screen-md: 4);
-$h3-font-sizes: (null: 1.6, $screen-md: 3);
+$h1-font-sizes: (null: 2.5, $screen-sm: 3.5, $screen-md: 4, $screen-lg: 5);
+$h2-font-sizes: (null: 2, $screen-sm: 3, $screen-md: 4);
+$h3-font-sizes: (null: 1.6, $screen-sm: 2, $screen-md: 3);
 
 body {
   font-family: $font-body;
   margin: 0;
-  color: $black;
+  color: $brand-dark;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -1,15 +1,18 @@
 //== Colours
 // Base colours
 $white:                     #ffffff;
+$white-light:               hsla(0, 0%, 100%, .7);
 $black:                     #23001E;
 
 // Primary colours
 $turquoise:                 #4EC5C1;
 $purple:                    #55505C;
+$blue:                      rgb(67, 83, 255);
 
 // Brand colours
 $brand-primary:             $turquoise;
 $brand-secondary:           $purple;
+$brand-dark:                #202020;
 
 //== Fonts
 // Font used for site headings
